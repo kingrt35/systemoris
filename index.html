@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองวัคซีน รพ.จันทรุเบกษา</title>
+    <style>
+        /* รีเซ็ตขอบหน้าจอ */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* ป้องกันการเลื่อนหน้าจอหลัก */
+            background-color: #1e3a8a; /* สีพื้นหลังกลืนกับแอป */
+        }
+        
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* ตั้งค่า iframe และดันแถบเทาขึ้นไปซ่อน */
+        iframe {
+            position: absolute;
+            top: -45px; /* ดันหน้าจอขึ้น 45px เพื่อซ่อนแถบเทาของ Google */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 45px); /* ชดเชยความสูงที่ถูกดันขึ้นไป */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <iframe src="https://script.google.com/macros/s/AKfycbxeegH-4fNxArMnOu2P2vd3Biy9Zu3PvKED5RO5B4Cp2VxOWrA5G2gISIsTj7fg1dWnaw/exec"></iframe>
+    </div>
+
+</body>
+</html>
